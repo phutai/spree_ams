@@ -17,19 +17,23 @@ module Spree
                 :large_url
 
     def mini_url
-      process_url object.attachment.url(:mini)
+      # process_url object.attachment.url(:mini)
+      url_for(object.attachment)
     end
 
     def small_url
-      process_url object.attachment.url(:small)
+      # process_url object.attachment.url(:small)
+      url_for(object.attachment)
     end
 
     def product_url
-      process_url object.attachment.url(:product)
+      # process_url object.attachment.url(:product)
+      url_for(object.attachment)
     end
 
     def large_url
-      process_url object.attachment.url(:large)
+      # process_url object.attachment.url(:large)
+      url_for(object.attachment)
     end
 
     def process_url(base_url)
